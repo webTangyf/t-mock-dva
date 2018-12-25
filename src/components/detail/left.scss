@@ -1,0 +1,20 @@
+@import '../../style/app.base.scss';
+$toolHeight: 50px;
+.detail__left{
+	position: relative;
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+	padding-top: $toolHeight;
+	.detail__leftHead{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: $toolHeight;
+		width: 100%;
+	}
+	.detail__leftContent{
+		height: 500px -$toolHeight;
+		overflow: hidden;
+	}
+}

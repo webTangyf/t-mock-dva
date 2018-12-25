@@ -1,0 +1,11 @@
+@import '../../style/app.base.scss';
+.detail__right{
+	padding-left: 50px;
+	position: relative;
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+	.detail__rightTitle{
+		margin-bottom: 20px;
+	}
+}

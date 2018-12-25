@@ -1,0 +1,25 @@
+@import '../../style/app.base.scss';
+.detail{
+	margin: 20px auto;
+	overflow: hidden;
+	.detail__layout{
+		box-sizing: border-box;
+		height: 100%;
+		overflow: hidden;
+		margin-top: 20px;
+		.detail__left{
+			height: 100%;
+			float: left;
+			width: 35%;
+		}
+		.detail__right{
+			height: 100%;
+			float: left;
+			width: 65%;
+		}
+	}
+}
+.ant-list-pagination{
+	text-align: left;
+}
+

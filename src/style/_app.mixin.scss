@@ -1,0 +1,9 @@
+@mixin col ($width) {
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 0 $width;
+	-moz-box-flex: 0;
+	-moz-flex: 0 0 $width;
+	-ms-flex: 0 0 $width;
+	flex: 0 0 $width;
+	max-width: $width;
+}

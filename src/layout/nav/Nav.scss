@@ -1,0 +1,42 @@
+@import '../../style/app.base.scss';
+$navHeight: 60px;
+.navLayout{
+	position: relative;
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+	min-width: $app-min-width;
+	padding-top: $navHeight;
+	& > div {
+		overflow: hidden;
+	}
+	.nav{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: $navHeight;
+		background-color: #24292e;
+		.content{
+			height: 100%;
+			width: $app-min-width;
+			margin: 0 auto;
+			font-size: 0;
+			*{
+				vertical-align: middle;
+			}
+			i{
+				line-height: 60px;
+				font-size: 40px;
+				color: #FFF;
+			}
+			span{
+				display: inline-block;
+				line-height: 60px;
+				font-size: 28px;
+				color: #FFF;
+				margin-left: 20px;
+			}
+		}
+	}
+}

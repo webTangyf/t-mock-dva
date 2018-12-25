@@ -1,0 +1,86 @@
+@import '../../style/app.base.scss';
+.home{
+	margin: 20px auto;
+	overflow: hidden;
+	height: 500px;
+	.home__left{
+		box-sizing: border-box;
+		float: left;
+		width: 66.6%;
+		ul{
+			height: 100%;
+			overflow-y: scroll;
+		}
+		.home__leftTitle{
+			align-items: center;
+			p{
+				color: #333;
+				font-size: 18px;
+				margin: 0 20px 0 0;
+			}
+		}
+		.project__item{
+			height: 100px;
+			overflow: hidden;
+			cursor: pointer;
+			align-items: center;
+			&:nth-child(n) {
+				.project__itemIndex, .project__itemName{	
+					color: $app-basecolor;
+					border-color: $app-basecolor;
+				}
+			}
+			&:nth-child(2n+0) {
+				.project__itemIndex, .project__itemName{	
+					color: $app-blue;
+					border-color: $app-blue;
+				}
+			}
+			&:nth-child(3n+0) {
+				.project__itemIndex, .project__itemName{	
+					color: $app-green;
+					border-color: $app-green;
+				}
+			}
+			& + .project__item{
+				border-top: 1px solid #e8e8e8;
+			}
+			.flex-1{
+				text-align: right;
+			}
+		}
+		$projectItemIndexUnit: 40px;
+		.project__itemIndex{
+			height: $projectItemIndexUnit;
+			width: $projectItemIndexUnit;
+			line-height: $projectItemIndexUnit;
+			font-size: 24px;
+			text-align: center;
+			border-radius: 50%;
+			border: 1px solid;
+		}
+		.project__itemName{
+			margin-left: 20px;
+			font-size: 20px;
+		}
+		.project__itemHandle{
+			text-align: right;
+			button{
+				margin: 0 10px;
+			}
+		}
+	}
+	.home__right{
+		box-sizing: border-box;
+		width: 33.4%;
+		float: left;
+		overflow-y: scroll;
+	}
+}
+.modalWrap{
+	box-sizing: border-box;
+	padding: 30px 0;
+}
+
+
+

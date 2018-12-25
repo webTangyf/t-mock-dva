@@ -1,0 +1,31 @@
+.minW{
+	min-width: 1200px;
+}
+.t-mock-page-card{
+	box-sizing: border-box;
+	width: 1200px;
+	padding: 30px;
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-box-shadow: 0 4px 26px 0 rgba(0,0,0,0.08);
+	-webkit-box-shadow: 0 4px 26px 0 rgba(0,0,0,0.08);
+	box-shadow: 0 4px 26px 0 rgba(0,0,0,0.08);
+}
+.row{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+}
+.flex-1{
+  flex: 1;
+}
+
+
+/*下面是关于ant ui 的 一些reset*/
+.ant-list-pagination{
+	text-align: center!important;
+}
